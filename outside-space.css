@@ -1,0 +1,240 @@
+.outside-space{
+  width: 100%;
+    max-width: 1300px;
+    height: 100%;
+    max-height: 700px;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.outside-left-section{
+  height: 100%;
+  width: 50%;
+}
+
+.outside-img-div{
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+
+.front-lever{
+  height: 340px;
+  margin: auto;  
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.outside-trainer-div{
+  height: 50%;
+    width: 100%;
+    display: flex;
+    position: relative;
+}
+
+
+.chris-heria{
+  width: 60%;
+  height: 85%;
+  object-fit: cover;
+  border: 2px solid white;
+  margin: auto;
+}
+
+.chris-heria-absolute{
+  position: absolute;
+  color: black;
+  background-color: rgba(255, 255, 255, 0.581);
+  bottom: 40px;
+  left: 10rem;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.chris-heria-absolute:hover{
+  background-color: rgba(255, 255, 255, 0.86);
+}
+.chris-heria-absolute:active{
+  margin-left: 4px;
+  margin-bottom: 4px;
+}
+
+.outside-right-section{
+  height: 100%;
+  width: 50%;
+}
+
+.outside-header-div{
+  width: 100%;
+  height: 15%;
+  font-size: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: bold;
+}
+
+.outside-scroll-div{
+  width: 100%;
+  height: 85%;
+  display: flex;
+  justify-content: center;
+}
+
+.scroll-container{
+  width: 90%;
+  height: 100%;
+  font-weight: bold;
+  font-size: 20px;
+    overflow-y: scroll;
+}
+
+.scroll-container::-webkit-scrollbar {
+  width: 12px;
+  /* Set the width of the scrollbar */
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: transparent;
+  /* Set the background color of the scrollbar track */
+}
+
+
+.header-img-one,
+.header-img-three,
+.header-img-two{
+  width: 80%;
+  object-fit: cover;
+  height: 250px;
+  border-radius: 10px;
+  border: 2px solid white;
+}
+
+.divider{
+  margin-top: 2rem;
+}
+
+/* MEDIA QUARES*/
+
+@media screen and (max-width: 1537px) {
+
+  .sauna-paragraph,
+  .steam-room-paragraph {
+    width: 100%;
+  }
+
+    .sauna,
+    .steam-room {
+      width: 250px;
+    }
+
+
+}
+
+@media screen and (max-width: 1286px) {
+
+  .sauna-paragraph,
+  .steam-room-paragraph {
+      width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 1025px) {
+
+  .front-lever{
+    width: 480px;
+  }
+  .chris-heria-absolute{
+    left: 150px;
+    white-space: wrap;
+    width: 200px;
+  }
+
+  .sauna-paragraph,
+  .steam-room-paragraph{
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .front-lever{
+    width: 350px;
+  }
+
+  .outside-header-div{
+    font-size: 26px;
+  }
+
+  .scroll-container{
+    font-size: 18px;
+  }
+
+  .chris-heria-absolute{
+    left: 80px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+.front-lever {
+    width: 300px;
+  }
+  
+
+.chris-heria-absolute {
+  left: 70px;
+  padding: 0px;
+  font-size: 14px;
+  width: 180px;
+}
+
+}
+
+@media screen and (max-width: 476px) {
+
+  .front-lever {
+      width: 200px;
+      height: 200px;
+    }
+
+    .chris-heria{
+      width: 200px;  
+    }
+
+    .chris-heria-absolute{
+      left: 30px;
+    }
+
+    .outside-header-div{
+      white-space: nowrap;
+      font-size: 20px;
+    }
+
+    .scroll-container{
+      font-size: 15px;
+      
+    }
+
+    .steam-room,
+    .sauna{
+      width: 100px;
+    }
+
+    .steam-room-paragraph,
+    .sauna-paragraph{
+      width: 330px;
+    }
+
+    
+  }
+
+

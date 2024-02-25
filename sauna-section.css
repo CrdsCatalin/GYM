@@ -1,0 +1,229 @@
+.sauna-section {
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  max-height: 800px;
+  margin: auto;
+  margin-top: 4rem;
+  overflow: hidden;
+}
+
+.sauna-header {
+  text-align: center;
+  font-size: 28px;
+  font-weight: bold;
+  padding-top: 3rem;
+}
+
+.sauna-div {
+  margin-top: 2.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.sauna-picture-div {
+  margin-right: 2rem;
+}
+
+.sauna {
+  width: 400px;
+  height: 280px;
+  border-radius: 10px;
+  transform: translateY(-100%);
+  /* Move the image above the container */
+  animation: slideFromTop 8s ease-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.sauna-details-div,
+.steam-room-details {
+  width: 700px;
+  line-height: 37px;
+}
+
+.sauna-paragraph,
+.steam-room-paragraph {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 12px;
+}
+
+@keyframes slideFromTop {
+  to {
+    transform: translateY(0);
+    /* Move the image to its normal position */
+  }
+}
+
+
+.steam-room-paragraph{
+  opacity: 0;
+  animation: disapear 10s ease-in-out forwards;
+  animation-iteration-count: infinite;
+}
+
+.sauna-paragraph{
+    opacity: 0;
+    animation: disapear 10s ease-in-out forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes disapear{
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+.steam-room-div{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: center;
+margin-top: 3rem;
+}
+
+
+.steam-picture-div{
+  margin-left: 2rem;
+}
+
+
+.steam-room{
+  width: 400px;
+    height: 280px;
+    border-radius: 10px;
+    transform: translateX(100%);
+      /* Move the image above the container */
+      animation: slideFromTop 8s ease-out forwards;
+      animation-iteration-count: infinite;
+}
+
+.sauna-span{
+  font-size: 25px;
+  color: lightcoral;
+}
+
+
+.divider{
+  border-bottom: 1px solid gray;
+  width: 95%;
+  margin: auto;
+  margin-top: 5rem;
+}
+
+
+/* MEDIA QUARES*/
+@media screen and (max-width: 768px) {
+
+  .sauna-paragraph,
+  .steam-room-paragraph{
+    font-size: 18px;
+    width: 500px;
+    margin-left: 20px;
+  }
+
+  .sauna-details-div,
+  .steam-room-details{
+    line-height: 20px;
+  }
+  .sauna,
+  .steam-room{
+    width: 200px;
+    height: 200px;
+  }
+
+  .sauna-picture-div,
+  .steam-picture-div{
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+
+  .sauna{
+    transform: translateY(-50%);
+  }
+  .steam-room{
+    transform: translateX(20%);
+  }
+  
+.divider {
+  margin-top: 2rem;
+}
+
+}
+
+ 
+  .sauna-paragraph,
+  .steam-room-paragraph{
+    font-size: 14px;
+    width: 450px;
+    margin-left: 5px;
+  }
+
+  .steam-room-paragraph{
+    padding-left: 10px;
+  }
+
+  .sauna-span{
+    font-size: 17px;
+  }
+
+  .sauna-section{
+    padding-top: 4rem;
+  }
+  
+  .steam-room,
+  .sauna{
+    width: 150px;
+    height: 150px;
+  }
+
+  .divider{
+    margin-top: 0px;
+  }
+
+    @keyframes slideFromTop {
+      to {
+        transform: translateY(20%);
+        /* Move the image to its normal position */
+      }
+    }
+
+}
+
+@media screen and (max-width: 476px) {
+
+  .sauna-paragraph,
+  .steam-room-paragraph{
+    font-size: 12px;
+    width: 300px;
+  }
+
+  .sauna-details-div{
+    width: 300px;
+  }
+
+  .steam-room-details{
+    width: 320px;
+  }
+
+  .steam-room,
+  .sauna{
+    height: 150px;
+    width: 120px;
+  }
+
+  .sauna-span{
+    font-size: 14px;
+  }
+
+.sauna {
+  transform: translateY(-10%);
+}
+  
+
+}

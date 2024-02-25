@@ -1,0 +1,656 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NeXus EliTe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Salsa&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const recoveryImages = document.querySelectorAll("#recovery-imgs img");
+    let currentIndex = 0;
+
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % recoveryImages.length;
+      const displacement = -currentIndex * (50 + 5); // 100% for the width, 10px for margin
+
+      recoveryImages.forEach(img => {
+        img.style.transform = `translateX(${displacement}%)`;
+      });
+
+      // Check if there are no more images to show
+      if (currentIndex === 0) {
+        setTimeout(() => {
+          recoveryImages.forEach(img => {
+            img.style.transition = 'none'; // Disable transition for the reset
+            img.style.transform = 'translateX(0)';
+          });
+          setTimeout(() => {
+            recoveryImages.forEach(img => {
+              img.style.transition = ''; // Re-enable transition after reset
+            });
+          }, 10); // Small delay before re-enabling transition
+        }, 1000); // 1000ms delay before resetting to the initial position
+      }
+    }, 2000); // Adjust the interval (in milliseconds) as needed
+  });
+</script>
+
+
+  <link rel="icon" href="Logo/imageedit_28_5376329354.png">
+  <link rel="stylesheet" href="header.css">
+  <link rel="stylesheet" href="welcome.css">
+  <link rel="stylesheet" href="sauna-section.css">
+  <link rel="stylesheet" href="outside-space.css">
+  <link rel="stylesheet" href="protein-bar.css">
+  <link rel="stylesheet" href="recovery.css">
+  <link rel="stylesheet" href="trainers.css">
+  <link rel="stylesheet" href="schedule.css">
+  <link rel="stylesheet" href="membership.css">
+  <link rel="stylesheet" href="Footer.css">
+
+
+</head>
+<body>
+  
+
+ <header> 
+
+  <div class="logo__name">
+
+    <div class="logo-div">
+
+      <img src="Logo/imageedit_27_7595476051.png" class="brand-logo">
+
+    </div>
+    <div class="brand-name-div">
+
+      <p class="brand"> EliteFit Nexus</p>
+
+    </div>
+
+  </div>
+
+
+  <div class="facilities">
+
+    <div class="membership">
+      <a href="#Membership" class="links">Membership</a>
+    </div>
+
+    <div class="membership">
+      <a href="#Schedule" class="links">Schedule</a>
+    </div>
+
+
+    <div class="membership">
+      <a href="#Sauna-section" class="links">Facilities</a>
+    </div>
+
+
+    <div class="membership">
+      <a href="#Trainers" class="links">Trainers</a>
+    </div>
+
+
+    <div class="membership">
+      <a href="#Footer" class="links">Contact</a>
+    </div>
+
+
+
+  </div>
+
+ </header>
+
+
+
+  <section class="welcome__section">
+
+    <div class="welcome-container">
+
+      <div class="welcome-div">
+
+        <div class="welcome-text">Welcome To The EliteFit Nexus</div>
+        <div class="brotherhood-text">Join The BrotherHood
+          <img src="Logo/imageedit_27_7595476051.png" 
+           class="BrotherHood-logo">
+        </div>
+
+      </div>
+
+
+      <div class="gym-description">🌟 Welcome to EliteFit Nexus, where fitness meets excellence! 🏋️‍♂️ Our state-of-the-art gym is designed to elevate your fitness journey to new heights. At EliteFit Nexus, we pride ourselves on providing a dynamic and inclusive environment tailored to meet the diverse needs of our members.
+        <br>
+        🏆 Whether you're a seasoned fitness enthusiast or just starting your wellness journey, our dedicated team of experienced trainers is here to guide and motivate you every step of the way. We believe in the power of a supportive community, and our vibrant atmosphere encourages members to push their limits and achieve their fitness goals.
+      </div>
+
+
+      <div class="button-div">
+
+        <button class="Join"><a href="#Membership">Join Now</a></button>
+
+      </div>
+
+      <div class="socials-div">
+
+        <img src="Logo/facebook.png" class="socials-logo">
+        <img src="Logo/instagram.png" class="socials-logo">
+        <img src="Logo/twitter.png" class="socials-logo">
+
+
+      </div>
+
+    </div>
+
+    <div class="picture-container">
+
+      <img src="elitefit-nexus-img/Leonardo_Diffusion_XL_calisthenics_gym_1.jpg" class="calisthenics">
+
+    </div>
+
+
+  </section>
+
+
+  <section class="sauna-section" id="Sauna-section">
+
+    <div class="sauna-header">EliteFit Nexus Facilities</div>
+
+
+    <div class="sauna-div">
+    <div class="sauna-picture-div">
+      <img src="Facilities/sauna.jpg" class="sauna">
+    </div>
+
+      <div class="sauna-details-div">
+        <p class="sauna-paragraph"> <span class="sauna-span">Saunas</span> promote detoxification through sweating, aiding in the elimination of toxins and metabolic waste.</p>
+        <p class="sauna-paragraph">The increased heart rate and vasodilation during sauna sessions contribute to cardiovascular conditioning, complementing overall fitness. </p>
+        <p class="sauna-paragraph">Furthermore, the relaxation induced by saunas helps reduce stress, supporting muscle recovery and fostering a conducive environment for achieving fitness goals.</p>
+      </div>
+
+    </div>
+
+
+    <div class="steam-room-div">
+
+      <div class="steam-room-details">
+
+        <p class="steam-room-paragraph">Using a <span class="sauna-span">Steam Room</span>  can promote relaxation, reduce stress, and indirectly support mental well-being, contributing to an overall sense of balance that complements fitness goals. </p>
+        <p class="steam-room-paragraph">The increased circulation and skin-cleansing effects may aid in post-exercise recovery and promote healthier-looking skin. </p>
+        <p class="steam-room-paragraph">While steam rooms offer these potential benefits, they should be viewed as a supplementary aspect of well-being and not a substitute for a well-rounded fitness routine.</p>
+
+      </div>
+
+
+      <div class="steam-picture-div">
+
+        <img src="Facilities/Steam-room.png" class="steam-room">
+
+      </div>
+
+
+    </div>
+
+
+  </section>
+
+
+
+
+
+
+
+ <div class="divider"></div>
+
+
+
+
+
+
+
+ <section class="outside-space">
+
+  <div class="outside-left-section">
+
+    <div class="outside-img-div">
+      <img src="Trainers/chris-front-lever.jpeg" class="front-lever">
+    </div>
+
+    <div class="outside-trainer-div">
+
+        <img src="Trainers/chris trainer.jpg" class="chris-heria">
+
+        <div class="chris-heria-absolute">Chris Heria - Personal Calisthenics Trainer</div>
+
+    </div>
+
+  </div>
+
+  <div class="outside-right-section">
+
+    <div class="outside-header-div">EliteFit Nexus Calisthenics Zone</div>
+
+    <div class="outside-scroll-div">
+     
+        <div class="scroll-container">
+
+          <p>Welcome to the EliteFit Nexus Calisthenics Zone, where incredible strength and mobility await you.</p>
+
+      <p>Our dedicated trainer, Summer, a self-taught calisthenics athlete, is here to guide you on your journey to achieve lifelong movement and incredible athleticism. With a focus on calisthenics skills and mobility training, together, we will overcome incredible challenges and find joy in pushing past plateaus.</p>
+
+      <img src="Trainers/calisthenics-ireland-home.png" class="header-img-one">
+      
+      <p>What Do We Offer?</p>
+
+      <p>Workouts for All Levels:
+        <br>
+        <br>
+ From beginner to advanced, our free calisthenics workouts cater to individuals at every stage of their fitness journey.
+<br>
+<br>
+Personal Connection:
+<br>
+<br>
+  Our experienced trainers are committed to guiding and motivating you, fostering a supportive community that uplifts one another.
+<br>
+<br>
+State-of-the-Art Facilities:
+<br>
+<br>
+ Located in Marysville and Grass Valley, California, our facilities offer energizing group classes, state-of-the-art equipment, and a wide range of fitness programs.</p>
+<br>
+
+        <img src="Trainers/tw-cali-bars.jpg" class="header-img-three">
+
+        <p>Training Approach:
+          <br>
+          <br>
+Chris Heria's unique training approach emphasizes mastering bodyweight exercises, honing technique, and fostering a mindset of continuous improvement. With an unwavering commitment to excellence, Chris empowers individuals to surpass their perceived limitations and embrace a lifestyle centered around holistic fitness.</p>
+
+        <img src="Trainers/img-0945-jpg-1638909378.jpg" class="header-img-two">
+
+
+        </div>
+
+    </div>
+
+  </div>
+
+ </section>
+
+
+ <div class="divider"></div>
+
+
+ <section class="protein-bar">
+
+  <div class="protein-bar-details-div">
+    <p class="protein-title">Protein Bar</p>
+    <p class="protein-bar-paragraph">The EliteFit Nexus Fitness Bar offers a range of nutritious and energizing snacks and drinks to fuel your workout. From protein bars to refreshing shakes, our fitness bar provides the perfect post-workout refuel.</p>
+  </div>
+
+
+  <div class="protein-bar-img-div">
+
+    <img src="Facilities/6492551b4ef774c717f2ef80_64798ddc29e65815d2eb3ffc_dunedin-4.jpeg" class="protein-bar-img">
+
+  </div>
+
+
+ </section>
+
+ <div class="divider"></div>
+
+
+ <section class="recovery-section">
+
+  <div class="recovery-text">
+    <p class="recovery-header">ImplemeNtinG proven recovery protocols.
+</p>
+    <p class="recovery-paragraph-one">Welcome to our Recovery Room, an exclusive offering that will enhance your lifestyle in more ways than one. Become a member and gain access to advanced recovery protocols, that will help both your physical and mental well-being. </p>
+    <p class="recovery-paragraph-two">Our space provides you with an escape from the daily grind, for you to enjoy on your own, or with a friend</p>
+    <p class="recovery-subtext">Relax, restore and rejuvenate.</p>
+    <p class="recovery-hastag">#RECovery</p>
+  </div>
+
+  <div class="recovery-video">
+
+    <video class="video" controls>
+      <source src="recover-img/x2mate.com-CFK Recovery.-(1080p).mp4">
+    </video>
+
+  </div>
+
+  <div id="recovery-imgs">
+    <img src="recover-img/1.png" alt="image 1">
+    <img src="recover-img/cryo-banner.jpg" alt="image 2">
+    <img src="recover-img/Homepage+Images.png" alt="image 3">
+    <img src="recover-img/Leg-Compression-1.jpg" alt="image 4">
+    <img src="recover-img/normatec-recovery2-scaled.jpg" alt="image 5">
+    <img src="recover-img/recover-room-studio-in-nyc.png" alt="image 6">
+<img src="recover-img/Recovery+room+4.png" alt="image 7">
+<img src="recover-img/The-Power-of-Recovery-Spaces-in-Fitness-Facilities-1-2.jpg" alt="image 8">
+<img src="recover-img/HIGH341776_374838_60222.jpg" alt="image 8">
+<img src="recover-img/bdy-sqd-recovery.jpg" alt="image 9">
+<img src="recover-img/acb81b45-6187-40b6-baf4-56de530e145e.avif" alt="image 10">
+<img src="recover-img/images.jpeg" alt="image 11">
+  </div>
+
+
+ </section>
+
+ <div style="width: 95%; margin: auto; margin-top: 4rem ;height: 3px; border-radius: 10px; background: repeating-linear-gradient(45deg, #CBE4DE, #CBE4DE 10px, #2E4F4F 10px, #2E4F4F 20px);"></div>
+
+
+ <section id="Trainers" class="trainers">
+  <div class="trainers-header">Nexus FitGym Trainers</div>
+    <div class="trainers-div-one">
+      <div class="trainer1">
+        <img src="elitefit-nexus-img/Leonardo_Diffusion_XL_a_gym_with_an_attractive_girl_in_it_with_3 (1).jpg" class="trainers-imgs">
+        <div class="animated-text">Anastezia - Personal Trainer 😏</div>
+      </div>
+      <div class="trainer2">
+        <img src="elitefit-nexus-img/Leonardo_Diffusion_XL_a_gym_with_an_attractive_man_in_it_3.jpg"" class="trainers-imgs">
+        <div class="animated-text">Adonis - Sex/Fitness Trainer </div>
+      </div>
+      <div class="trainer3">
+        <img src="elitefit-nexus-img/Leonardo_Diffusion_XL_a_gym_with_an_attractive_man_in_it_6_pac_1.jpg" class="trainers-imgs">
+        <div class="animated-text">Martin - Aesthetics/Personal Trainer</div>
+
+      </div>
+    </div>
+
+    <div class="trainers-div-two">
+      <div class="trainer4">
+        <img src="Trainers/587bf61e-8ce6-49fc-8efa-6c8e911c32ea.png" class="trainers-imgs">
+        <div class="animated-text">Jefferson - Science Based Bodybuilder</div>
+      </div>
+      <div class="trainer5">
+        <img src="Trainers/376545e9-d5dd-4f18-bc7d-1418889ee547.png" class="trainers-imgs">
+        <div class="animated-text">Misa - Yoga/Personal Trainer</div>
+
+      </div>
+      <div class="trainer6">
+        <img src="Trainers/5708ea8e-3ea7-43c9-b82e-4b62793ba933.png" class="trainers-imgs">
+        <div class="animated-text">Iulia - Personal Trainer</div>
+      </div>
+    </div>
+
+
+ </section>
+
+  <div style="width: 95%; margin: auto; margin-top: 10rem ;height: 3px; border-radius: 10px; background: repeating-linear-gradient(45deg, #CBE4DE, #CBE4DE 10px, #2E4F4F 10px, #2E4F4F 20px);"></div>
+
+  <section class="schedule" id="Schedule">
+
+    <div class="rules">
+      <div class="rules-div-container">
+        <ol>
+          <li class="changing-colors"><p>Membership and Access:</p>
+          <p>Only members with valid memberships or day passes are allowed entry. <br> Members must scan their membership card or provide identification upon entry.
+
+    
+          </li>
+          <li class="changing-colors">
+            <p>Attire:</p>
+            <p>Proper athletic attire, including athletic shoes, must be worn at all times. <br>
+Shirts and shoes are usually required in workout areas.</p>
+          </li>
+          <li class="changing-colors">
+            <p>Equipment Use:</p>
+            <p>Follow proper etiquette when using equipment (e.g., wiping down machines after use). <br>
+Allow others to "work in" or share equipment during busy times.</p>
+          </li>
+          <li class="changing-colors">
+            <p>Safety:</p>
+            <p>Use equipment as intended and follow safety guidelines. <br>
+Do not drop weights on the floor.</p>
+          </li>
+          <li class="changing-colors">
+            <p>Hygiene:</p>
+            <p>Towels are often required on benches and machines to maintain cleanliness. <br>
+Wipe down equipment after use.</p>
+          </li>
+          <li class="changing-colors">
+            <p>Noise and Disturbance:</p>
+            <p>Keep noise to a minimum, including dropping weights quietly. <br>
+Use headphones for personal audio devices.</p>
+          </li>
+          <li class="changing-colors">
+            <p>Personal Belongings:</p>
+            <p>Use lockers to store personal belongings. <br>
+Do not leave personal items unattended.</p>
+          </li>
+          <li class="changing-colors">
+            <p>Respect for Others:</p>
+            <p>Be mindful of others' personal space. <br>
+Avoid loud or disruptive behavior.
+</p>
+          </li>
+          <li class="changing-colors">
+            <p>Group Classes:</p>
+            <p>Arrive on time for scheduled classes. <br>
+Follow the instructor's guidelines.</p>
+          </li>
+          <li class="changing-colors">
+            <p>Children and Guests:</p>
+            <p>Children may have restricted access or specific hours. <br>
+Guests may need to sign in and adhere to gym policies.</p>
+          </li>
+
+        </ol>
+      </div>
+    </div>
+
+    <div class="schedule-div-container">
+
+    <div class="schedule-div">
+
+      <div class="schedule-time">
+
+        <div class="day">
+          <img src="Logo/clock.png" class="clock-picture"> Luni
+        </div>
+        <div class="time">07:00 - 22:00</div>
+
+      </div>
+
+      <div class="schedule-time">
+
+        <div class="day">
+          <img src="Logo/clock.png" class="clock-picture"> Marți
+        </div>
+        <div class="time">07:00 - 22:00</div>
+
+      </div>
+
+
+      <div class="schedule-time">
+
+        <div class="day">
+          <img src="Logo/clock.png" class="clock-picture"> Miercuri
+        </div>
+        <div class="time">07:00 - 22:00</div>
+
+      </div>
+
+
+      <div class="schedule-time">
+
+        <div class="day">
+          <img src="Logo/clock.png" class="clock-picture"> Joi
+        </div>
+        <div class="time">07:00 - 22:00</div>
+
+      </div>
+
+
+      <div class="schedule-time">
+
+        <div class="day">
+          <img src="Logo/clock.png" class="clock-picture"> Vineri 
+        </div>
+        <div class="time">07:00 - 22:00</div>
+
+      </div>
+
+
+      <div class="schedule-time">
+
+        <div class="day">
+          <img src="Logo/clock.png" class="clock-picture"> Sâmbătă
+        </div>
+        <div class="time">08:00-18:00  
+</div>
+
+      </div>
+
+
+      <div class="schedule-time">
+
+        <div class="day">
+          <img src="Logo/clock.png" class="clock-picture"> Duminică
+        </div>
+        <div class="time">10:00 - 18:00
+</div>
+
+      </div>
+
+
+    </div>
+
+
+
+    <div class="schedule-div-pic">
+      <img src="Facilities/Sweat440-blog-hero-image-1-1080x450.jpg" class="schedule-img">
+    </div>
+    </div>
+
+
+    
+
+
+  </section>
+
+  <div style="width: 95%; margin: auto; margin-top: 5rem ;height: 3px; border-radius: 10px; background: repeating-linear-gradient(45deg, #CBE4DE, #CBE4DE 10px, #2E4F4F 10px, #2E4F4F 20px);"></div>
+
+
+  <section class="pay-membership" id="Membership">
+
+    <div class="membership1">
+      <p class="subscription1">FITNESS SUBSCRIPTIONS</p>
+      <p class="price1">From 30$</p>
+      <p class="description1">GOLD FITNESS – 25$ Euro – Monthly Payment Subscription, valid for the fitness center, with a 30% discount starting from the 4th month, 30$ RON/month.</p>
+      <p class="description2">STUDENT FITNESS – 32$ Euro/month – abonament valabil la sala de fitness</p>
+      <p class="fifelity-price">FIDELITY 3 luni : 60$ </p>
+      <p class="master-price">MASTER 6 luni: 90$</p>
+      <p class="Vip-price">VIP 1 an : 150$</p>
+      <div class="membership-button"><button class="paid-button">Buy  Now</button></div>
+    </div>
+
+    <div class="membership2">
+      <p class="subscription1">Subscriptions GROUP/FITNESS</p>
+      <p class="price2">From 40$</p>
+      <p class="description1">SILVER – 40$ EUR 
+        <br>
+            8 sedinte/lun GROUP/FITNESS</p>
+
+            <p class="description2">GOLD – 42$ EUR 
+                <br>
+            12 sedinte / luna GROUP/FITNESS</p>
+            <p class="fifelity-price">ANTRENAMENT PERSONAL 
+              <br>
+            1 sedinta 10$ EUR
+              <br>
+            12 sedinte 55$ EUR </p>
+            <div class="membership-button"><button class="paid-button">Buy  Now</button></div>
+    </div>
+
+    <div class="membership3">
+<p class="subscription1">Valability</p>
+<p class="price3">The complete price list at the reception</p>
+<p class="valability-text"> <img src="Logo/check.png" class="check">The subscriptions are valid for 30 days and are nominal.</p>
+<p class="valability-text"> <img src="Logo/check.png" class="check">The unlimited subscriptions include 1 entry per day
+</p>
+<p class="valability-text"> <img src="Logo/check.png" class="check">During official holidays, sessions for subscriptions are not refunded.</p>
+  <div class="membership-button"><button class="paid-button">We wait you &#9742; </button></div>
+    </div>
+
+  </section>
+
+  <div style="width: 95%; margin: auto; margin-top: 5rem ;height: 3px; border-radius: 10px; background: repeating-linear-gradient(45deg, #CBE4DE, #CBE4DE 10px, #2E4F4F 10px, #2E4F4F 20px);"></div>
+
+  <footer class="footer" id="Footer">
+
+    <div class="news-letter-container">
+      <div class="news-letter">
+        <p class="news-letter-text">Sign-In To Receive EliteFit Nexus News Letter !!</p>
+        <div class="input">
+          <input type="email" placeholder="Your Email Adress" class="email-place-holder">
+        <button class="sign-in">Sign-In</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="telephone-nr-container">
+      <div class="telephone-nr-div">
+        <div class="telephone-text"> 
+          <img src="Logo/phone-call.png" class="telephone">EliteFit Nexus - 7 November: 021 740 822
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-text-container">
+      <div class="copyright-div">
+        <div class="first-copy-div">
+          <p>Întregul conținut al site-ului este proprietate absolută a sălii EliteFit Gym, orice folosire în interes personal sau comercial fără aprobarea noastră explicită este interzisă prin legea Nr.8 din 14 Martie 1996 privind dreptul de autor și drepturile conexe</p>
+        </div>
+
+        <div class="copyright">
+
+        <div class="copy-links">
+
+          <a href="#">Home Old</a>
+          <a href="#">Group Fitness</a>
+          <a href="#">Echipa de antrenori</a>
+          <a href="#">Servicii</a>
+          <a href="#">Tarife</a>
+          <a href="#">Politica de confidentialitate</a>
+          <a href="#">Despre modulele cookie</a>
+          <a href="#">Contact</a>
+
+
+        </div>
+
+        <div class="copyright-policie">
+          <p> &copy; 2024 - EliteFit Nexus. Concept si realizare site: <span> <img src="Logo/instagram.png"><a href="https://www.instagram.com/catalin_cardos/" target="_blank">catalin_cardos</a> <img src="Logo/check-2.png"> </span></p>
+        </div>
+
+
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+
+</body>
+</html>

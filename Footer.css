@@ -1,0 +1,247 @@
+.footer{
+width: 100%;
+  height: 100%;
+  max-height: 500px;
+  margin-top: 4rem;
+}
+
+.news-letter-container{
+  width: 100%;
+  height: 33%;
+  background-color: #0e8488d1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.telephone-nr-container{
+  width: 100%;
+    height: 33%;
+    background-color: rgba(0, 0, 0, 0.658);
+    position: relative;
+}
+
+.footer-text-container{
+  background-color: #a2d7cb;
+  width: 100%;
+  height: 33%;
+}
+
+.news-letter{
+height: 100%;
+width: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+}
+
+.news-letter-text{
+  font-size: 25px;
+  font-weight: bold;
+}
+.input{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.email-place-holder{
+  width: 100%;
+  max-width: 350px;
+  height: 30px;
+  margin-right: 1rem;
+  border-radius: 5px;
+  border: inset 2px solid gray;
+  box-shadow: 1px 1px 5px gray;
+  font-size: 15px;
+}
+
+.email-place-holder::placeholder{
+  font-size: 13px;
+  font-weight: bold;
+  
+}
+
+.sign-in{
+  height: 32px;
+  border: none;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: bold;
+  border: inset 2px solid gray;
+  box-shadow: 1px 1px 5px gray;
+  cursor: pointer;
+  background-color: #CBE4DE;
+}
+
+.sign-in:hover{
+  opacity: 0.5;
+}
+
+.telephone-nr-div{
+  height: 60%;
+    width: 95%;
+    background-color: rgb(155, 183, 13);
+    position: absolute;
+    bottom: 0;
+    left: 2rem;
+    display: flex;
+    align-items: center;
+}
+
+.telephone-text{
+  display: flex;
+  align-items: center;
+  padding-left: 2rem;
+  font-size: 18px;  
+  color: black;
+}
+.telephone{
+  padding-right: 2rem;
+}
+
+.copy-links{
+  width: 1000px;
+}
+
+.copyright-div{
+  width: 95%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-size: 15px;
+}
+
+.copyright-div a{
+  text-decoration: none;
+  color: green;
+  font-size: 14px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-right: 3px solid yellow;
+}
+
+.copyright{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.copyright-policie{
+  font-size: 15px;
+  white-space: wrap;
+  width: 330px;
+  line-height: 25px;
+}
+
+.copyright-policie span{
+  color: green;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+  .copyright-policie a{
+    border: none;
+  }
+
+.copyright-policie img{
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .news-letter-text{
+    font-size: 24px;
+  }
+  
+  .copyright-policie a{
+    padding: 0px;
+  }
+  .copyright-policie span{
+    width: 150px;
+  }
+
+  .copy-links a{
+    font-size: 15px;
+  }
+
+  .footer-text-container p{
+    margin-bottom: 0px;
+    font-size: 16 px;
+  }
+
+}
+
+@media screen and (max-width: 768px) {
+
+  .news-letter-text{
+    font-size: 24px;
+    width: 400px;
+    white-space: nowrap;
+  }
+
+  .sign-in{
+    white-space: nowrap;
+  }
+
+  .footer-text-container p{
+    margin-bottom: 0px;
+  }
+
+  .copyright-policie p{
+    margin-top: 0px;
+  }
+
+}
+
+@media screen and (max-width: 640px) {
+
+  .news-letter-text{
+    font-size: 20px;
+  }
+
+  .footer-text-container p{
+    font-size: 13px;
+  }
+
+  .copyright-policie p {
+    margin-left: 5px;
+  }
+
+  .copy-links a{
+    font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 476px) {
+
+  .telephone-text{
+    font-size: 16px;
+  }
+
+  .telephone-nr-div{
+    width: 90%;
+    height: 40%;
+  }
+
+  .copy-links{
+    text-align: center;
+  }
+  .footer-text-container p{
+    margin-bottom: 5px;
+  }
+
+}
+
+

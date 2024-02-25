@@ -1,0 +1,243 @@
+.pay-membership{
+  width: 100%;
+    max-width: 1400px;
+    height: 100%;
+    max-height: 500px;
+    margin: auto;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.membership1{
+width: 33%;
+height: 100%;
+border-radius: 20px;
+box-shadow: 2px 2px 10px black;
+background-color: darkred;
+}
+.membership1:hover,
+.membership2:hover,
+.membership3:hover{
+  opacity: 0.9;
+  cursor: pointer;
+}
+
+  .subscription1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+  }
+  
+  .price1{
+    text-align: center;
+    font-size: 40px;
+    background-color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+  }
+  .price2{
+    text-align: center;
+      font-size: 40px;
+      padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        background-color: #778899;
+  }
+
+  .price3{
+    text-align: center;
+      font-size: 33px;
+      white-space: nowrap;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-radius: 5px;
+      background-color: #6B8E23;
+  }
+
+  .description1,
+  .description2,
+  .fifelity-price,
+  .master-price,
+  .Vip-price{
+    text-align: center;
+    padding-left: 10px;
+    font-size: 17px;
+  }
+
+  .membership-button{
+    text-align: center;
+  }
+
+  .paid-button{
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #CBE4DE;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px black;
+    cursor: pointer;
+    transition: transform 1.5s ease-in-out;
+  }
+  .paid-button:hover{
+    transform: rotateY(360deg);
+  }
+
+  .paid-button:active{
+    margin-top: 4px;
+    margin-left: 4px;
+  }
+
+
+.membership2{
+width: 33%;
+  height: 100%;
+  background-color: darkslateblue;
+  border-radius: 20px;
+    box-shadow: 2px 2px 10px #778899;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.membership3{
+width: 33%;
+  height: 100%;
+  background-color: darkslategray;
+  box-shadow: 2px 2px 10px #6B8E23;
+    border-radius: 20px;
+}
+
+.valability-text{
+  text-align: center;
+  font-size: 20px;
+  border-bottom: 2px solid #6B8E23 ;
+  padding-bottom: 1rem;
+}
+.check{
+  margin-right: 1rem;
+}
+
+@media screen and (max-width:1280px) {
+  
+  .Vip-price{
+    margin-bottom: 3px;
+    margin-top: 0px;
+  }
+  .master-price{
+    margin-bottom: 3px;
+    margin-top: 0px;
+  }
+
+  .fifelity-price{
+    margin-bottom: 3px;
+  }
+
+  .price3{
+    font-size: 30px;
+  }
+
+}
+
+@media screen and (max-width: 1024px) {
+
+  .valability-text{
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding-bottom: 10px;
+  }
+
+  .price3{
+    white-space: wrap;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+  }
+  
+}
+
+@media screen and (max-width:768px) {
+
+  .price1,
+  .price2{
+    margin-bottom: 15px;
+  }
+
+  .valability-text{
+    font-size: 18.5px;
+  }
+  
+  .fifelity-price{
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 640px) {
+
+  .price1,
+  .price2{
+    font-size: 30px;
+  }
+  .price3{
+    font-size: 25px;
+  }
+
+  .subscription1{
+    margin-bottom: 10px;
+  }
+
+  .fifelity-price{
+    margin-bottom: 3px;
+    margin-top: 0px;
+  }
+
+  .description2{
+    margin-bottom: 4px;
+  }
+
+  .description1,
+  .description2,
+  .fifelity-price,
+  .master-price,
+  .Vip-price{
+    font-size: 15px;
+  }
+
+  .paid-button{
+    font-size: 15px;
+  }
+  
+}
+
+@media screen and (max-width: 476px) {
+  
+  .subscription1{
+    font-size: 25px;
+  }
+
+  .price1,
+  .price2{
+    font-size: 25px;
+  }
+
+  .valability-text{
+    font-size: 14px;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+  }
+
+    .description1,
+    .description2,
+    .fifelity-price,
+    .master-price,
+    .Vip-price {
+      font-size: 14px;
+    }
+
+}

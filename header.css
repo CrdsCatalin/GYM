@@ -1,0 +1,125 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  height: 320%;
+  background-image: linear-gradient(to right, #2E4F4F, #2C3333, #0E8388);
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  color: #CBE4DE;
+}
+
+header{
+    height: 100px;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+    /* Add padding for better spacing on larger screens */  
+}
+
+
+
+.logo__name{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.brand-logo{
+  height: 100px;
+  width: 100px;
+  object-fit: cover;
+}
+
+.brand{
+  font-size: 22px;
+}
+
+.facilities{
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.links{
+  border-right: 2px solid yellow;
+    padding-right: 15px;
+    /* Adjust padding for better spacing */
+    text-decoration: none;
+    color: #CBE4DE;
+}
+
+.links:hover{
+  cursor: pointer;
+  color: #cbe4de70;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+
+  .facilities {
+    width: 70%;
+  }
+
+  .membership{
+    width: 20%;
+    text-align: center;
+  }
+
+}
+
+    @media only screen and (max-width: 480px) {
+
+      .facilities {
+          flex-direction: column;
+          text-align: center;
+          align-items: center;
+        }
+      
+        .links {
+          border: none;
+          font-size: 15px;
+          padding: 0;
+        }
+
+        .membership{
+          margin-bottom: 10px;
+        }
+
+    }
+
+
+        @media only screen and (max-width: 650px) {
+
+          .links{
+            border: none;
+            white-space: nowrap;
+            text-decoration: underline rgba(255, 255, 0, 0.621);
+            padding: 0;
+          }
+
+          .membership {
+           margin-bottom: 10px;
+          }
+
+
+          .facilities{
+            flex-direction: column;
+            font-size: 20px;
+            align-items: center;           
+          }
+
+        }

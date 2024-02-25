@@ -1,0 +1,98 @@
+.protein-bar{
+  width: 100%;
+  max-width: 1300px;
+  height: 100%;
+  max-height: 550px;
+  margin: auto;
+  margin-top: 4rem;
+  padding: 10px;
+  box-shadow: inset 1px 50px 100px gray;
+  border-radius: 10px;
+}
+
+.protein-bar-details-div{
+  width: 100%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+
+.protein-bar-img-div{
+  width: 100%;
+  height: 70%;
+}
+
+.protein-title{
+  font-size: 25px;
+  margin-bottom: 10px;
+}
+
+.protein-bar-paragraph{
+  font-size: 20px;
+  width: 99%;
+  margin-top: 10px;
+}
+
+.protein-bar-img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+
+@media(max-width: 769px){
+  .protein-bar-img{
+    
+    width: 750px;
+
+  }
+
+    .protein-bar {
+      padding-right: 0px;
+    }
+ 
+}
+
+@media (max-width: 641px){
+
+  .protein-bar-img{
+    width: 630px;
+  }
+
+    .protein-bar {
+      padding-right: 0px;
+    }
+
+}
+
+@media (max-width: 476px){
+
+  .protein-bar-img{
+    width: 464px;
+  }
+
+  .protein-bar-paragraph{
+    font-size: 18px;
+  }
+
+  .protein-bar{
+    padding-right: 0px;
+  }
+
+}
+
+@media(max-width: 376px) {
+
+  .protein-bar-img{
+    width: 360px;
+    height: 330px;
+  }
+
+  .protein-bar-img-div{
+    padding-top: 2rem;
+  }
+  
+}
